@@ -1,3 +1,12 @@
 @tailwind base;
+
+html {
+  @apply bg-gray-100 antialiased
+}
+
+body {
+  @apply text-gray-800 leading-normal
+}
+
 @tailwind components;
 @tailwind utilities;

@@ -10,7 +10,7 @@ import data from "../components/apis"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div>
+    <div className="container mx-auto p-6">
       <ul>
         {
           data.map((item, index) => (

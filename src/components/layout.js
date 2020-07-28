@@ -28,9 +28,13 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <div className="container mx-auto px-6">
+            <div className="border-t h-16 flex items-center">
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </div>
+          </div>
         </footer>
       </div>
     </>

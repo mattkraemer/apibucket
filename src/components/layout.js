@@ -27,8 +27,8 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <footer>
-          <div className="container mx-auto px-6">
+        <footer className="border-t">
+          <div className="container mx-auto p-6">
             <div>
               © {new Date().getFullYear()}, Built with
               {` `}

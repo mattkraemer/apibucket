@@ -34,7 +34,7 @@ const IndexPage = () => (
         {
           data.map((item, index) => (
             <div key={index} className="col-span-3">
-              <div className="bg-white rounded shadow-sm hover:shadow">
+              <div className="bg-white rounded shadow-sm hover:shadow transition duration-300 ease-in-out">
                 <div className="p-6 h-32 flex bg-gray-200 rounded-t">
                   <h4 className="font-medium truncate mt-auto">{item.title}</h4>
                 </div>

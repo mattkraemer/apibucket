@@ -8,5 +8,12 @@ body {
   @apply text-gray-800 leading-normal
 }
 
+.link {
+
+}
+.link:hover {
+  @apply text-indigo-600;
+}
+
 @tailwind components;
 @tailwind utilities;

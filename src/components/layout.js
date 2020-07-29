@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 
@@ -27,12 +27,18 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <footer className="border-t">
-          <div className="container mx-auto p-6">
+        <footer className="container mx-auto p-6">
+          <div className="border-t py-6 flex justify-between">
             <div>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
+              © {new Date().getFullYear()}&nbsp;
+              <Link to="/" className="">
+                <span className="font-bold">api</span><span>pedia</span>
+              </Link>
+            </div>
+            <div>
+              <Link to="/" className="link">
+                Contact
+              </Link>
             </div>
           </div>
         </footer>

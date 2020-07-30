@@ -58,7 +58,7 @@
     "apiDocsUrl": "http://www.geonames.org/export/web-services.html",
     "apiTosUrl": "http://www.geonames.org/export/",
     "apiArchitecture": "REST",
-    "apiRequestFormats": "URI Query String/CRUD",
-    "apiResponseFormats": "CSV, JSON, Text, XML"
+    "apiRequestFormats": ["URI Query String", "CRUD"],
+    "apiResponseFormats": ["CSV", "JSON", "Text", "XML"]
   }
 ]

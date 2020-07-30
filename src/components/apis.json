@@ -51,6 +51,13 @@
     "category": "Mapping",
     "url": "http://politics.google.com",
     "descriptionShort": "Geographical database with web services",
-    "descriptionLong": "Geonames is a geographical database with web services that let users extract useful information about different places, such as weather, timezone and post codes. The GeoNames geographical database covers all countries and contains over eight million placenames that are available for download free of charge. Users can edit, correct and add new names using a wiki interface."
+    "descriptionLong": "Geonames is a geographical database with web services that let users extract useful information about different places, such as weather, timezone and post codes. The GeoNames geographical database covers all countries and contains over eight million placenames that are available for download free of charge. Users can edit, correct and add new names using a wiki interface.",
+    "apiEndpoint": "http://api.geonames.org/",
+    "apiWebsite": "http://www.geonames.org/export/",
+    "apiDocsUrl": "http://www.geonames.org/export/web-services.html",
+    "apiTosUrl": "http://www.geonames.org/export/",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": "URI Query String/CRUD",
+    "apiResponseFormats": "CSV, JSON, Text, XML"
   }
 ]

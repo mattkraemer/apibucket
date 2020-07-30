@@ -26,7 +26,7 @@ const Layout = ({children}) => {
             <form>
               <ContextConsumer>
                 {({ data, set }) => (
-                  <input onChange={(event) => set({ query: event.currentTarget.value })} type="text" className="px-4 py-2 bg-blue-800 text-blue-300 placeholder-blue-400 w-full rounded-lg" placeholder="Search for an API..." />
+                  <input onChange={(event) => set({ query: event.currentTarget.value })} type="text" className="px-4 py-2 bg-blue-800 text-blue-300 placeholder-blue-400 w-full rounded-lg focus:outline-none" placeholder="Search for an API..." />
                 )}
               </ContextConsumer>
             </form>

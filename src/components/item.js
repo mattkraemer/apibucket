@@ -41,53 +41,66 @@ const Item = (props) => {
             <div key={index} className="absolute top-0 left-0 bottom-0 right-0 flex justify-center items-start">
               <div className="absolute top-0 bottom-0 left-0 right-0 bg-blue-900 bg-opacity-25" onClick={() => setOpen(false)} />
               <div className="bg-white lg:rounded shadow-xl z-10 lg:m-8 lg:max-w-4xl w-full overflow-hidden">
-                <div className="px-6 py-4 bg-gray-100 flex items-center">
+                <div className="px-6 py-4 bg-blue-200 text-blue-900 flex items-center">
                   <h4 className="text-3xl">{item.title}</h4>
-                  <span className="ml-auto px-3 py-1 rounded-full bg-gray-200">{item.category}</span>
                 </div>
-                <div className="p-6">
-                  <div className="mb-4">
-                    <h5 className="font-medium text-lg">Description</h5>
+                <div className="p-6 bg-blue-100 text-blue-900 grid grid-cols-9 gap-6">
+                  <div className="col-span-6">
+                    <h5 className="text-sm font-semibold text-blue-800 block">Description</h5>
                     <p>{item.descriptionLong}</p>
                   </div>
-                  <div>
-                    <h5 className="font-medium mb-2 text-lg">Meta Information</h5>
-                    <ul className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                      <li className="p-4 border rounded">
-                        <span className="text-sm font-semibold text-gray-700 block">API Endpoint</span>
-                        {item.apiEndpoint ? <a href={item.apiEndpoint} target="_blank" className="truncate block">{item.apiEndpoint}</a> : <span className="text-gray-500 block">Not defined.</span>}
-                      </li>
-                      <li className="p-4 border rounded">
-                        <span className="text-sm font-semibold text-gray-700 block">API Website</span>
-                        {item.apiWebsite ? <a href={item.apiWebsite} target="_blank" className="truncate block">{item.apiWebsite}</a> : <span className="text-gray-500 block">Not defined.</span>}
-                      </li>
-                      <li className="p-4 border rounded">
-                        <span className="text-sm font-semibold text-gray-700 block">Docs URL</span>
-                        {item.apiDocsUrl ? <a href={item.apiDocsUrl} target="_blank" className="truncate block">{item.apiDocsUrl}</a> : <span className="text-gray-500 block">Not defined.</span>}
-                      </li>
-                      <li className="p-4 border rounded">
-                        <span className="text-sm font-semibold text-gray-700 block">ToS URL</span>
-                        {item.apiTosUrl ? <a href={item.apiTosUrl} target="_blank" className="truncate block">{item.apiTosUrl}</a> : <span className="text-gray-500 block">Not defined.</span>}
-                      </li>
-                      <li className="p-4 border rounded">
-                        <span className="text-sm font-semibold text-gray-700 block">Architecture</span>
-                        {item.apiArchitecture ? <span className="block">{item.apiArchitecture}</span> : <span className="text-gray-500 block">Not defined.</span>}
-                      </li>
-                      <li className="p-4 border rounded">
-                        <span className="text-sm font-semibold text-gray-700 block">Request Formats</span>
-                        {item.apiRequestFormats ? <span className="block">{item.apiRequestFormats}</span> : <span className="text-gray-500 block">Not defined.</span>}
-                      </li>
-                      <li className="p-4 border rounded">
-                        <span className="text-sm font-semibold text-gray-700 block">Response Formats</span>
-                        {item.apiResponseFormats ? <span className="block">{item.apiResponseFormats}</span> : <span className="text-gray-500 block">Not defined.</span>}
-                      </li>
-                    </ul>
+                  <div className="col-span-3">
+                    <div className="border-l-2 border-blue-200 px-6">
+                      <ul>
+                        <li className="mb-3">
+                          <span className="text-sm font-semibold text-blue-800 block">Category</span>
+                          <span>{item.category}</span>
+                        </li>
+                        <li className="mb-3">
+                          <span className="text-sm font-semibold text-blue-800 block">Last updated</span>
+                          <span>{moment(item.added).fromNow()}</span>
+                        </li>
+                        <li>
+                          <Link to="/" className="px-5 py-2 inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium rounded">
+                            Visit Website
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div className="border-t p-6 flex items-center">
-                  <Link to="/" className="px-5 py-2 inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium rounded">
-                    Visit Website
-                  </Link>
+                <div className="p-6">
+                  <h5 className="font-medium mb-2 text-lg">Meta Information</h5>
+                  <ul className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                    <li className="p-4 bg-gray-200 bg-opacity-50 rounded">
+                      <span className="text-sm font-semibold text-gray-700 block">API Endpoint</span>
+                      {item.apiEndpoint ? <a href={item.apiEndpoint} target="_blank" className="truncate block">{item.apiEndpoint}</a> : <span className="text-gray-500 block">Not defined.</span>}
+                    </li>
+                    <li className="p-4 bg-gray-200 bg-opacity-50 rounded">
+                      <span className="text-sm font-semibold text-gray-700 block">API Website</span>
+                      {item.apiWebsite ? <a href={item.apiWebsite} target="_blank" className="truncate block">{item.apiWebsite}</a> : <span className="text-gray-500 block">Not defined.</span>}
+                    </li>
+                    <li className="p-4 bg-gray-200 bg-opacity-50 rounded">
+                      <span className="text-sm font-semibold text-gray-700 block">Docs URL</span>
+                      {item.apiDocsUrl ? <a href={item.apiDocsUrl} target="_blank" className="truncate block">{item.apiDocsUrl}</a> : <span className="text-gray-500 block">Not defined.</span>}
+                    </li>
+                    <li className="p-4 bg-gray-200 bg-opacity-50 rounded">
+                      <span className="text-sm font-semibold text-gray-700 block">ToS URL</span>
+                      {item.apiTosUrl ? <a href={item.apiTosUrl} target="_blank" className="truncate block">{item.apiTosUrl}</a> : <span className="text-gray-500 block">Not defined.</span>}
+                    </li>
+                    <li className="p-4 bg-gray-200 bg-opacity-50 rounded">
+                      <span className="text-sm font-semibold text-gray-700 block">Architecture</span>
+                      {item.apiArchitecture ? <span className="block">{item.apiArchitecture}</span> : <span className="text-gray-500 block">Not defined.</span>}
+                    </li>
+                    <li className="p-4 bg-gray-200 bg-opacity-50 rounded">
+                      <span className="text-sm font-semibold text-gray-700 block">Request Formats</span>
+                      {item.apiRequestFormats ? <span className="block">{item.apiRequestFormats}</span> : <span className="text-gray-500 block">Not defined.</span>}
+                    </li>
+                    <li className="p-4 bg-gray-200 bg-opacity-50 rounded">
+                      <span className="text-sm font-semibold text-gray-700 block">Response Formats</span>
+                      {item.apiResponseFormats ? <span className="block">{item.apiResponseFormats}</span> : <span className="text-gray-500 block">Not defined.</span>}
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

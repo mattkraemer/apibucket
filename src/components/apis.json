@@ -1,55 +1,9 @@
 [
   {
-    "id": "1",
-    "added": "2020-07-28T12:45:38+00:00",
-    "title": "Worldwide Stock Data API",
-    "category": "Finance",
-    "url": "http://finance.google.com",
-    "descriptionShort": "Worldwide Stock Data API",
-    "descriptionLong": "Worldwide Stock Data API"
-  },
-  {
-    "id": "2",
-    "added": "2020-07-27T12:45:38+00:00",
-    "title": "Global Airports Data API",
-    "category": "Travel",
-    "url": "http://travel.google.com",
-    "descriptionShort": "Global Airports Data API",
-    "descriptionLong": "Global Airports Data API"
-  },
-  {
-    "id": "3",
-    "added": "2020-07-26T12:45:38+00:00",
-    "title": "World Football Statistics API",
-    "category": "Sports",
-    "url": "http://sports.google.com",
-    "descriptionShort": "World Football Statistics API",
-    "descriptionLong": "World Football Statistics API"
-  },
-  {
-    "id": "4",
-    "added": "2020-07-25T12:45:38+00:00",
-    "title": "Worldwide Historical Weather API",
-    "category": "Weather",
-    "url": "http://weather.google.com",
-    "descriptionShort": "Worldwide Historical Weather API",
-    "descriptionLong": "Worldwide Historical Weather API"
-  },
-  {
-    "id": "5",
-    "added": "2020-07-24T12:45:38+00:00",
-    "title": "Current Politic News API",
-    "category": "Politics",
-    "url": "http://politics.google.com",
-    "descriptionShort": "Current Politic News API",
-    "descriptionLong": "Current Politic News API"
-  },
-  {
     "id": "6",
     "added": "2020-07-30T12:45:38+00:00",
     "title": "GeoNames REST API",
     "category": "Mapping",
-    "url": "http://politics.google.com",
     "tags": ["mapping", "geo", "places", "countries"],
     "descriptionShort": "Geographical database with web services",
     "descriptionLong": "Geonames is a geographical database with web services that let users extract useful information about different places, such as weather, timezone and post codes. The GeoNames geographical database covers all countries and contains over eight million placenames that are available for download free of charge. Users can edit, correct and add new names using a wiki interface.",

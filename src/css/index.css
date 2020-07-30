@@ -1,7 +1,7 @@
 @tailwind base;
 
 html {
-  @apply bg-gray-100 antialiased
+  @apply bg-gray-100 bg-opacity-50 antialiased
 }
 
 body {

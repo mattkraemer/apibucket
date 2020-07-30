@@ -38,8 +38,8 @@ const Item = (props) => {
                 class: 'overflow-hidden'
               }}
             />
-            <div key={index} className="absolute top-0 left-0 bottom-0 right-0 flex justify-center items-start">
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-blue-900 bg-opacity-25" onClick={() => setOpen(false)} />
+            <div key={index} className="absolute top-0 left-0 bottom-0 right-0 flex justify-center items-start overflow-scroll">
+              <div className="fixed top-0 bottom-0 left-0 right-0 bg-blue-900 bg-opacity-25" onClick={() => setOpen(false)} />
               <div className="bg-white lg:rounded shadow-xl z-10 lg:m-8 lg:max-w-4xl w-full overflow-hidden">
                 <div className="px-6 py-4 bg-blue-200 text-blue-900 flex items-center">
                   <h4 className="text-3xl">{item.title}</h4>

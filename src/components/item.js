@@ -47,11 +47,11 @@ const Item = (props) => {
                 </div>
                 <div className="p-6">
                   <div className="mb-4">
-                    <h5 className="font-medium mb-1">Description</h5>
+                    <h5 className="font-medium text-lg">Description</h5>
                     <p>{item.descriptionLong}</p>
                   </div>
                   <div>
-                    <h5 className="font-medium mb-2">Meta Information</h5>
+                    <h5 className="font-medium mb-2 text-lg">Meta Information</h5>
                     <ul className="grid grid-cols-2 lg:grid-cols-3 gap-4">
                       <li className="p-4 border rounded">
                         <span className="text-sm font-semibold text-gray-700 block">API Endpoint</span>

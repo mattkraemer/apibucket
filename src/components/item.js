@@ -110,7 +110,7 @@ const Item = (props) => {
                       <div className="flex -m-1">
                         {
                           item.tags.map((tag, index) => (
-                            <span className="inline capitalize bg-teal-200 bg-opacity-75 text-teal-900 m-1 px-3 py-1 rounded">{tag}</span>
+                            <span className="inline capitalize bg-blue-200 bg-opacity-75 text-blue-900 m-1 px-3 py-1 rounded">{tag}</span>
                           ))
                         }
                       </div>

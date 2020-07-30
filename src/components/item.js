@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
+import Image from "./image"
 
 var moment = require('moment');
 
@@ -38,10 +39,10 @@ const Item = (props) => {
                 class: 'overflow-hidden'
               }}
             />
-            <div key={index} className="absolute top-0 left-0 bottom-0 right-0 flex justify-center items-start overflow-scroll">
+            <div key={index} className="fixed top-0 left-0 bottom-0 right-0 flex justify-center items-start overflow-scroll">
               <div className="fixed top-0 bottom-0 left-0 right-0 bg-blue-900 bg-opacity-25" onClick={() => setOpen(false)} />
               <div className="bg-white lg:rounded shadow-xl z-10 lg:m-8 lg:max-w-4xl w-full overflow-hidden">
-                <div className="px-6 py-4 bg-blue-200 text-blue-900 flex items-center">
+                <div className="px-6 py-4 bg-blue-900 text-white flex items-center">
                   <h4 className="text-3xl">{item.title}</h4>
                 </div>
                 <div className="p-6 bg-blue-100 text-blue-900 grid grid-cols-9 gap-6">
@@ -101,6 +102,22 @@ const Item = (props) => {
                       {item.apiResponseFormats ? <span className="block">{item.apiResponseFormats}</span> : <span className="text-gray-500 block">Not defined.</span>}
                     </li>
                   </ul>
+                </div>
+                <div className="p-6 bg-blue-100 bg-opacity-50 text-blue-900">
+                  <h5 className="font-medium mb-2 text-lg">Tags</h5>
+                  {
+                    item.tags ? (
+                      <div className="flex -m-1">
+                        {
+                          item.tags.map((tag, index) => (
+                            <span className="inline capitalize bg-teal-200 bg-opacity-75 text-teal-900 m-1 px-3 py-1 rounded">{tag}</span>
+                          ))
+                        }
+                      </div>
+                    )
+                      :
+                      <span className="text-gray-500 block">Not defined.</span>
+                  }
                 </div>
               </div>
             </div>

@@ -60,11 +60,11 @@ const Item = (props) => {
                           <span className="text-sm font-semibold text-blue-800 block">Last updated</span>
                           <span>{moment(item.added).fromNow()}</span>
                         </li>
-                        <li>
-                          <Link to="/" className="px-5 py-2 inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium rounded">
+                        {item.apiWebsite && 
+                          <a href={item.apiWebsite} target="_blank" className="px-5 py-2 inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium rounded">
                             Visit Website
-                          </Link>
-                        </li>
+                          </a>
+                        }
                       </ul>
                     </div>
                   </div>

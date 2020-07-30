@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../layouts"
@@ -57,8 +57,13 @@ const IndexPage = () => {
                 </div>
               </div>
           </div>
-          {data.query}
           <div className="container mx-auto p-6">
+            {
+              data.query &&
+                <div className="mb-6">
+                  Searching for <span className="font-bold">{data.query}</span>
+                </div>
+            }
             <div className="grid grid-cols-12 gap-4">
               {
                 apidata.map((item, index) => (

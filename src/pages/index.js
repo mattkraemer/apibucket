@@ -59,18 +59,30 @@ const IndexPage = () => {
           </div>
           <div className="container mx-auto p-6">
             {
-              data.query &&
-                <div className="mb-6">
-                  Searching for <span className="font-bold">{data.query}</span>
+              data.query ?
+                <>
+                  <div className="mb-6">
+                    Searching for <span className="font-bold">{data.query}</span>
+                  </div>
+                  <div className="grid grid-cols-12 gap-4">
+                    {
+                      apidata.filter(function(entry) {
+                        return entry.title.toUpperCase().indexOf(data.query.toUpperCase()) !== -1;
+                      }).map((item, index) => (
+                        <Item item={item} index={index} />
+                      ))
+                    }
+                  </div>
+                </>
+                :
+                <div className="grid grid-cols-12 gap-4">
+                  {
+                    apidata.map((item, index) => (
+                      <Item item={item} index={index} />
+                    ))
+                  }
                 </div>
             }
-            <div className="grid grid-cols-12 gap-4">
-              {
-                apidata.map((item, index) => (
-                  <Item item={item} index={index} />
-                ))
-              }
-            </div>
           </div>
         </>
       )}

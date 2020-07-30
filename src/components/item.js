@@ -46,12 +46,48 @@ const Item = (props) => {
                   <span className="ml-auto px-3 py-1 rounded-full bg-gray-200">{item.category}</span>
                 </div>
                 <div className="p-6">
-                  <p>{item.descriptionLong}</p>
-                  <div className="border-t pt-6 mt-6 flex items-center">
-                    <Link to="/" className="px-5 py-2 inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium rounded">
-                      Visit Website
-                    </Link>
+                  <div className="mb-4">
+                    <h5 className="font-medium mb-1">Description</h5>
+                    <p>{item.descriptionLong}</p>
                   </div>
+                  <div>
+                    <h5 className="font-medium mb-2">Meta Information</h5>
+                    <ul className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                      <li className="p-4 border rounded">
+                        <span className="text-sm font-semibold text-gray-700 block">API Endpoint</span>
+                        {item.apiEndpoint ? <a href={item.apiEndpoint} target="_blank" className="truncate block">{item.apiEndpoint}</a> : <span className="text-gray-500 block">Not defined.</span>}
+                      </li>
+                      <li className="p-4 border rounded">
+                        <span className="text-sm font-semibold text-gray-700 block">API Website</span>
+                        {item.apiWebsite ? <a href={item.apiWebsite} target="_blank" className="truncate block">{item.apiWebsite}</a> : <span className="text-gray-500 block">Not defined.</span>}
+                      </li>
+                      <li className="p-4 border rounded">
+                        <span className="text-sm font-semibold text-gray-700 block">Docs URL</span>
+                        {item.apiDocsUrl ? <a href={item.apiDocsUrl} target="_blank" className="truncate block">{item.apiDocsUrl}</a> : <span className="text-gray-500 block">Not defined.</span>}
+                      </li>
+                      <li className="p-4 border rounded">
+                        <span className="text-sm font-semibold text-gray-700 block">ToS URL</span>
+                        {item.apiTosUrl ? <a href={item.apiTosUrl} target="_blank" className="truncate block">{item.apiTosUrl}</a> : <span className="text-gray-500 block">Not defined.</span>}
+                      </li>
+                      <li className="p-4 border rounded">
+                        <span className="text-sm font-semibold text-gray-700 block">Architecture</span>
+                        {item.apiArchitecture ? <span className="block">{item.apiArchitecture}</span> : <span className="text-gray-500 block">Not defined.</span>}
+                      </li>
+                      <li className="p-4 border rounded">
+                        <span className="text-sm font-semibold text-gray-700 block">Request Formats</span>
+                        {item.apiRequestFormats ? <span className="block">{item.apiRequestFormats}</span> : <span className="text-gray-500 block">Not defined.</span>}
+                      </li>
+                      <li className="p-4 border rounded">
+                        <span className="text-sm font-semibold text-gray-700 block">Response Formats</span>
+                        {item.apiResponseFormats ? <span className="block">{item.apiResponseFormats}</span> : <span className="text-gray-500 block">Not defined.</span>}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="border-t p-6 flex items-center">
+                  <Link to="/" className="px-5 py-2 inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium rounded">
+                    Visit Website
+                  </Link>
                 </div>
               </div>
             </div>

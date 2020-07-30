@@ -43,7 +43,14 @@ const IndexPage = () => {
           <div className="bg-white shadow-sm">
             <div className="container mx-auto px-6 py-4 flex">
                 <div className="flex items-center">
-                  <span>{apidata.length} entries found.</span>
+                {
+                  data.query ?
+                      <span>{apidata.filter(function(entry) {
+                        return entry.title.toUpperCase().indexOf(data.query.toUpperCase()) !== -1;
+                      }).length} entries found.</span>
+                    :
+                      <span>{apidata.length} entries found.</span>
+                }
                 </div>
                 <div className="ml-auto flex items-center">
                   <span className="font-semibold mr-3 text-sm text-gray-700">Filter by</span>

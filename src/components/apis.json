@@ -14,5 +14,21 @@
     "apiArchitecture": "REST",
     "apiRequestFormats": ["URI Query String", "CRUD"],
     "apiResponseFormats": ["CSV", "JSON", "Text", "XML"]
+  },
+  {
+    "id": "7",
+    "added": "2020-07-31T12:45:38+00:00",
+    "title": "Food REST API v1.0",
+    "category": "Food",
+    "tags": ["food", "nutrition", "restaurants"],
+    "descriptionShort": "Over 360,000 recipes and 80,000 food products.",
+    "descriptionLong": "The Food and Recipe API is spoonacular's Food, Recipe, Menu, Restaurant and Nutrition API which allows users to access over 360,000 recipes and 80,000 food products.",
+    "apiEndpoint": "https://api.spoonacular.com/recipes/search",
+    "apiWebsite": "https://spoonacular.com/food-api",
+    "apiDocsUrl": "https://spoonacular.com/food-api/docs",
+    "apiTosUrl": "https://spoonacular.com/food-api/terms",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD"],
+    "apiResponseFormats": ["CSV", "GeoJSON", "JSON", "XML"]
   }
 ]

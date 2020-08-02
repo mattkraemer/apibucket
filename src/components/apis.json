@@ -94,5 +94,21 @@
     "apiArchitecture": "REST",
     "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
     "apiResponseFormats": ["JSON"]
+  },
+  {
+    "id": "12",
+    "added": "2020-08-02T12:45:38+00:00",
+    "title": "Open Pinball Database REST API",
+    "category": "Games",
+    "tags": ["games"],
+    "descriptionShort": "Provides searchable data about pinball machines and an API to add pinball machine data into applications.",
+    "descriptionLong": "The Open Pinball Database provides searchable data about pinball machines and an API to add pinball machine data into applications. All OPDB data results are JSON formatted and available via REST API for querying data about specific machines, retrieving exports of the entire dataset, using specialized endpoints for typeahead searching and more. This service requires authentication using an Account ID and Token for most API endpoints with the exception of typeahead searching.",
+    "apiEndpoint": "https://opdb.org/api",
+    "apiWebsite": "https://opdb.org/",
+    "apiDocsUrl": "https://opdb.org/api",
+    "apiTosUrl": "",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
+    "apiResponseFormats": ["JSON"]
   }
 ]

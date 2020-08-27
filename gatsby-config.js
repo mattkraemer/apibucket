@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Apipedia - Open Data API Library`,
-    description: `Open Data API Library`,
+    title: `APIBucket - Big Data API Library`,
+    description: `Big Data API Library`,
     author: ``,
   },
   plugins: [

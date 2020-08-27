@@ -20,7 +20,7 @@ const Layout = ({children}) => {
       <header className="bg-blue-900">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
           <Link to="/" className="text-xl text-blue-100">
-            <span className="font-bold">api</span><span>pedia</span>
+            <span className="font-bold">API</span><span>Bucket</span>
           </Link>
           <div className="w-full px-6">
             <form>
@@ -32,7 +32,7 @@ const Layout = ({children}) => {
             </form>
           </div>
           <div className="flex-shrink-0">
-            <span className="text-blue-200 opacity-75">Open Data API Library</span>
+            <span className="text-blue-200 opacity-75">Big Data API Library</span>
           </div>
         </div>
       </header>
@@ -42,7 +42,7 @@ const Layout = ({children}) => {
           <div>
             © {new Date().getFullYear()}&nbsp;
             <Link to="/" className="">
-              <span className="font-bold">api</span><span>pedia</span>
+              <span className="font-bold">API</span><span>Bucket</span>
             </Link>
           </div>
           <div>

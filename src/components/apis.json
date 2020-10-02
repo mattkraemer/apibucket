@@ -167,12 +167,7 @@
     "category": "Gaming",
     "tags": ["gaming", "video games"],
     "descriptionShort": "The RAWG Video Games Database API enables access to data about video games.",
-    "descriptionLong": "The RAWG Video Games Database API enables access to data about video games. The API enables users to:
-    - search for video games: over 300,000 titles on 50 platforms
-    - pull data about video games such as publishers, developers, genres, description, etc.
-    - get links to all digital stores where users can buy a game
-    - find similar games, powered by our machine learning algorithm
-    RAWG is a video game database and video game discovery service",
+    "descriptionLong": "The RAWG Video Games Database API enables access to data about video games.",
     "apiEndpoint": "https://api.rawg.io/api",
     "apiWebsite": "https://rawg.io/apidocs",
     "apiDocsUrl": "",

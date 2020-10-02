@@ -45,11 +45,6 @@ const Layout = ({children}) => {
               <span className="font-bold">API</span><span>Bucket</span>
             </Link>
           </div>
-          <div>
-            <Link to="/" className="link">
-              Contact
-            </Link>
-          </div>
         </div>
       </footer>
     </ContextProviderComponent>

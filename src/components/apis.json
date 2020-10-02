@@ -129,24 +129,8 @@
     "apiResponseFormats": ["JSON"]
   },
   {
-    "id": "13",
-    "added": "2020-10-02T12:45:38+00:00",
-    "title": "",
-    "category": "",
-    "tags": [""],
-    "descriptionShort": "",
-    "descriptionLong": "",
-    "apiEndpoint": "",
-    "apiWebsite": "",
-    "apiDocsUrl": "",
-    "apiTosUrl": "",
-    "apiArchitecture": "REST",
-    "apiRequestFormats": ["URI Query String", "CRUD"],
-    "apiResponseFormats": ["JSON"]
-  },
-  {
     "id": "14",
-    "added": "2020-10-02T12:45:38+00:00",
+    "added": "2020-10-02T09:45:38+00:00",
     "title": "Request Kittens REST API",
     "category": "Animals",
     "tags": ["animals", "cats", "pets", "recognition"],
@@ -162,7 +146,7 @@
   },
   {
     "id": "15",
-    "added": "2020-10-02T12:45:38+00:00",
+    "added": "2020-10-02T10:45:38+00:00",
     "title": "RAWG Video Games Database REST API",
     "category": "Gaming",
     "tags": ["gaming", "video games"],
@@ -178,7 +162,7 @@
   },
   {
     "id": "16",
-    "added": "2020-10-02T12:45:38+00:00",
+    "added": "2020-10-02T11:45:38+00:00",
     "title": "WormBase ParaSite REST API",
     "category": "Science",
     "tags": ["analytics", "genetics"],

@@ -110,5 +110,107 @@
     "apiArchitecture": "REST",
     "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
     "apiResponseFormats": ["JSON"]
+  },
+  {
+    "id": "13",
+    "added": "2020-10-02T12:45:38+00:00",
+    "title": "CORD-19 REST API v1",
+    "category": "Health",
+    "tags": ["coronavirus", "covid", "health", "medical"],
+    "descriptionShort": "Search of the COVID-19 Open Research Dataset (CORD-19), running in the Vespa Cloud.",
+    "descriptionLong": "The CORD-19 Search and Navigate API is a Vespa.ai powered search of the COVID-19 Open Research Dataset (CORD-19), running in the Vespa Cloud. Vespa is an open big data serving engine, a part of the Yahoo Developer Network.",
+    "apiEndpoint": "https://api.cord19.vespa.ai/search",
+    "apiWebsite": "https://cord19.vespa.ai/",
+    "apiDocsUrl": "https://docs.vespa.ai/documentation/search-api.html",
+    "apiTosUrl": "https://github.com/vespa-engine/cord-19/blob/master/LICENSE",
+    "apiTosUrl": "",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD"],
+    "apiResponseFormats": ["JSON"]
+  },
+  {
+    "id": "13",
+    "added": "2020-10-02T12:45:38+00:00",
+    "title": "",
+    "category": "",
+    "tags": [""],
+    "descriptionShort": "",
+    "descriptionLong": "",
+    "apiEndpoint": "",
+    "apiWebsite": "",
+    "apiDocsUrl": "",
+    "apiTosUrl": "",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD"],
+    "apiResponseFormats": ["JSON"]
+  },
+  {
+    "id": "14",
+    "added": "2020-10-02T12:45:38+00:00",
+    "title": "Request Kittens REST API",
+    "category": "Animals",
+    "tags": ["animals", "cats", "pets", "recognition"],
+    "descriptionShort": "Request Kittens provides a way to return various cat images.",
+    "descriptionLong": "Request Kittens provides a way to return various cat images. Use the API to fetch information about a specific cat, get a randomized set of category-specific cat images, return images of cats based on an emotion (ie: grumpy) and more.",
+    "apiEndpoint": "http://requestkittens.com/cats",
+    "apiWebsite": "https://github.com/joshwcomeau/RequestKittens",
+    "apiDocsUrl": "https://github.com/joshwcomeau/RequestKittensDocs",
+    "apiTosUrl": "",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
+    "apiResponseFormats": ["JSON"]
+  },
+  {
+    "id": "15",
+    "added": "2020-10-02T12:45:38+00:00",
+    "title": "RAWG Video Games Database REST API",
+    "category": "Gaming",
+    "tags": ["gaming", "video games"],
+    "descriptionShort": "The RAWG Video Games Database API enables access to data about video games.",
+    "descriptionLong": "The RAWG Video Games Database API enables access to data about video games. The API enables users to:
+    - search for video games: over 300,000 titles on 50 platforms
+    - pull data about video games such as publishers, developers, genres, description, etc.
+    - get links to all digital stores where users can buy a game
+    - find similar games, powered by our machine learning algorithm
+    RAWG is a video game database and video game discovery service",
+    "apiEndpoint": "https://api.rawg.io/api",
+    "apiWebsite": "https://rawg.io/apidocs",
+    "apiDocsUrl": "",
+    "apiTosUrl": "https://rawg.io/terms",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
+    "apiResponseFormats": ["JSON"]
+  },
+  {
+    "id": "16",
+    "added": "2020-10-02T12:45:38+00:00",
+    "title": "WormBase ParaSite REST API",
+    "category": "Science",
+    "tags": ["analytics", "genetics"],
+    "descriptionShort": "Provides language-neutral programmatic access to ParaSite data, parasitic worm draft genomes and genomic data in WormBase.",
+    "descriptionLong": "The WormBase ParaSite REST API provides language-neutral programmatic access to ParaSite data, parasitic worm draft genomes and genomic data in WormBase. This includes nematode and flatworm genomes in WormBase ParaSite that represents 90 species. WormBase ParaSite is an open-access resource to analyse, store and present helminth genomic data, that is developed by EMBL-EBI and the Wellcome Trust Sanger Institute.",
+    "apiEndpoint": "https://parasite.wormbase.org/rest",
+    "apiWebsite": "https://wormbase.org/about/userguide/for_developers#3--10",
+    "apiDocsUrl": "https://parasite.wormbase.org/info/index.html",
+    "apiTosUrl": "https://www.ebi.ac.uk/about/terms-of-use",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
+    "apiResponseFormats": ["JSON"]
+  },
+  {
+    "id": "17",
+    "added": "2020-10-02T12:45:38+00:00",
+    "title": "BrAPI Breeding REST API",
+    "category": "Science",
+    "tags": ["agriculture", "flowers", "nature"],
+    "descriptionShort": "Provides access to a plant database with plant phenotype and genotype data.",
+    "descriptionLong": "The BrAPI Breeding API provides access to a plant database with plant phenotype and genotype data. The API returns information associated with crops, germplasm, attributes, programs, locations, and genome maps. This information is available in JSON format. All calls need to be HTTPS authenticated. Note: The Breeding API specifies a standard interface for plant phenotype/genotype databases to serve their data to crop breeding applications. It is a shared, open API, to be used by all data providers and data consumers who wish to participate.",
+    "apiEndpoint": "https://test-server.brapi.org/brapi/v1",
+    "apiWebsite": "https://brapi.docs.apiary.io/",
+    "apiDocsUrl": "https://brapi.docs.apiary.io/",
+    "apiTosUrl": "",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
+    "apiResponseFormats": ["JSON"]
   }
 ]

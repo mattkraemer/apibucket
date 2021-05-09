@@ -191,5 +191,21 @@
     "apiArchitecture": "REST",
     "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
     "apiResponseFormats": ["JSON"]
+  },
+  {
+    "id": "19",
+    "added": "2020-10-02T12:45:38+00:00",
+    "title": "BrAPI Breeding REST API",
+    "category": "Science",
+    "tags": ["agriculture", "flowers", "nature"],
+    "descriptionShort": "Provides access to a plant database with plant phenotype and genotype data.",
+    "descriptionLong": "The BrAPI Breeding API provides access to a plant database with plant phenotype and genotype data. The API returns information associated with crops, germplasm, attributes, programs, locations, and genome maps. This information is available in JSON format. All calls need to be HTTPS authenticated. Note: The Breeding API specifies a standard interface for plant phenotype/genotype databases to serve their data to crop breeding applications. It is a shared, open API, to be used by all data providers and data consumers who wish to participate.",
+    "apiEndpoint": "https://test-server.brapi.org/brapi/v1",
+    "apiWebsite": "https://brapi.docs.apiary.io/",
+    "apiDocsUrl": "https://brapi.docs.apiary.io/",
+    "apiTosUrl": "",
+    "apiArchitecture": "REST",
+    "apiRequestFormats": ["URI Query String", "CRUD", "JSON"],
+    "apiResponseFormats": ["JSON"]
   }
 ]
